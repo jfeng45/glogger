@@ -1,7 +1,11 @@
 // package logrus handles creating logrus logger
-package glogger
+package logrus
 
 import (
+	"github.com/jfeng45/glogger"
+	"github.com/jfeng45/glogger/logconfig"
+
+	//	"github.com/jfeng45/glogger/logfactory"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )
@@ -35,7 +39,7 @@ import (
 //	logger.lw.Println(args)
 //}
 
-func RegisterLogrusLog(lc LogConfig) (Logger, error) {
+func RegisterLogrusLog(lc logconfig.LogConfig) (glogger.Logger, error) {
 	//standard configuration
 	log := logrus.New()
 	log.SetFormatter(&logrus.TextFormatter{})
@@ -54,7 +58,7 @@ func RegisterLogrusLog(lc LogConfig) (Logger, error) {
 }
 
 // customizeLogrusLogFromConfig customize log based on parameters from configuration file
-func customizeLogrusLogFromConfig(log *logrus.Logger, lc LogConfig) error {
+func customizeLogrusLogFromConfig(log *logrus.Logger, lc logconfig.LogConfig) error {
 	log.SetReportCaller(lc.EnableCaller)
 	//log.SetOutput(os.Stdout)
 	l := &log.Level

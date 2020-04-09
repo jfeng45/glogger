@@ -2,10 +2,6 @@
 
 package glogger
 
-import (
-	"github.com/pkg/errors"
-)
-
 // Log is a package level variable, every program should access logging function through "Log"
 var Log Logger
 
@@ -21,13 +17,6 @@ type Logger interface {
 	Debug(args ...interface{})
 }
 
-func InitLogger(lc LogConfig) (Logger, error) {
-	loggerType := lc.Code
-	l, err := GetLogFactoryBuilder(loggerType).Build(&lc)
-	if err != nil {
-		return l, errors.Wrap(err, "")
-	}
-	return l, nil
-}
+
 
 

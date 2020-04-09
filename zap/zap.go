@@ -1,8 +1,10 @@
 // package zap handles creating zap logger
-package glogger
+package zap
 
 import (
 	"encoding/json"
+	"github.com/jfeng45/glogger"
+	"github.com/jfeng45/glogger/logconfig"
 	"github.com/pkg/errors"
 	"go.uber.org/zap"
 )
@@ -37,7 +39,7 @@ import (
 //	logger.lw.Info(args, "\n")
 //}
 
-func RegisterLog(lc LogConfig) (Logger, error) {
+func RegisterLog(lc logconfig.LogConfig) (glogger.Logger, error) {
 	zLogger, err := initLog(lc)
 	if err != nil {
 		return nil, errors.Wrap(err, "RegisterLogrusLog")
@@ -54,7 +56,7 @@ func RegisterLog(lc LogConfig) (Logger, error) {
 }
 
 // initLog create logger
-func initLog(lc LogConfig) (zap.Logger, error) {
+func initLog(lc logconfig.LogConfig) (zap.Logger, error) {
 	rawJSON := []byte(`{
 	 "level": "info",
      "Development": true,
@@ -98,7 +100,7 @@ func initLog(lc LogConfig) (zap.Logger, error) {
 }
 
 // customizeLogrusLogFromConfig customize log based on parameters from configuration file
-func customizeLogFromConfig(cfg *zap.Config, lc LogConfig) error {
+func customizeLogFromConfig(cfg *zap.Config, lc logconfig.LogConfig) error {
 	cfg.DisableCaller = !lc.EnableCaller
 
 	// set log level

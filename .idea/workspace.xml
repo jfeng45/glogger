@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73640b4f-c700-4d72-b2df-0d772bb86afd" name="Default Changelist" comment="" />
+    <list default="true" id="73640b4f-c700-4d72-b2df-0d772bb86afd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logConfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/logconfig/logConfig.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logFactory.go" beforeDir="false" afterPath="$PROJECT_DIR$/logfactory/logFactory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logrus.go" beforeDir="false" afterPath="$PROJECT_DIR$/logrus/logrus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logrusFactory.go" beforeDir="false" afterPath="$PROJECT_DIR$/logrus/logrusFactory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap.go" beforeDir="false" afterPath="$PROJECT_DIR$/zap/zap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zapFactory.go" beforeDir="false" afterPath="$PROJECT_DIR$/zap/zapFactory.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,34 +22,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logrus.go">
+        <entry file="file://$PROJECT_DIR$/logrus/logrus.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+            <state relative-caret-position="1276">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
-                <element signature="e#65#204#0" expanded="true" />
+                <element signature="e#66#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#83#162#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logFactory.go">
+        <entry file="file://$PROJECT_DIR$/logfactory/logFactory.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="143">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -46,34 +54,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmd/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="44">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logrus/logrusFactory.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#14#167#0" expanded="true" />
+                <element signature="e#17#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logrusFactory.go">
+        <entry file="file://$PROJECT_DIR$/zap/zapFactory.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="308">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
-                <element signature="e#23#146#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zapFactory.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="e#23#143#0" expanded="true" />
+                <element signature="e#17#52#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,32 +94,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/go.sum">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logConfig.go">
+        <entry file="file://$PROJECT_DIR$/logconfig/logConfig.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zap.go">
+        <entry file="file://$PROJECT_DIR$/zap/zap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+            <state relative-caret-position="363">
+              <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
               <folding>
-                <element signature="e#56#201#0" expanded="true" />
+                <element signature="e#60#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -125,6 +132,9 @@
     </replaceStrings>
   </component>
   <component name="GOROOT" path="D:\app1\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="urls">
       <list>
@@ -142,24 +152,29 @@
         <option value="$PROJECT_DIR$/config/configValidator.go" />
         <option value="$PROJECT_DIR$/config/logConfig.go" />
         <option value="$PROJECT_DIR$/loggerfactory/zap/zap.go" />
-        <option value="$PROJECT_DIR$/logConfig.go" />
-        <option value="$PROJECT_DIR$/logFactory.go" />
         <option value="$PROJECT_DIR$/loggerfactory/zapFactory.go" />
         <option value="$PROJECT_DIR$/logrusFactory.go" />
         <option value="$PROJECT_DIR$/logrus.go" />
         <option value="$PROJECT_DIR$/zapFactory.go" />
         <option value="$PROJECT_DIR$/zap.go" />
         <option value="$PROJECT_DIR$/cmd/main.go" />
+        <option value="$PROJECT_DIR$/logrus/logrusFactory.go" />
+        <option value="$PROJECT_DIR$/logConfig.go" />
+        <option value="$PROJECT_DIR$/logFactory.go" />
+        <option value="$PROJECT_DIR$/zap/zap.go" />
+        <option value="$PROJECT_DIR$/logrus/logrus.go" />
         <option value="$PROJECT_DIR$/logger.go" />
+        <option value="$PROJECT_DIR$/logfactory/logFactory.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="669" />
-    <option name="y" value="97" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="93" />
+    <option name="y" value="15" />
     <option name="width" value="1959" />
     <option name="height" value="1365" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -180,6 +195,26 @@
             </path>
             <path>
               <item name="glogger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="glogger" type="462c0819:PsiDirectoryNode" />
+              <item name="logconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="glogger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="glogger" type="462c0819:PsiDirectoryNode" />
+              <item name="logfactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="glogger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="glogger" type="462c0819:PsiDirectoryNode" />
+              <item name="logrus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="glogger" type="b2602c69:ProjectViewProjectNode" />
+              <item name="glogger" type="462c0819:PsiDirectoryNode" />
+              <item name="zap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="glogger" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -189,20 +224,28 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/logfactory" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
+    <key name="GoMoveDeclarationDialog.RECENT_KEY">
+      <recent name="$PROJECT_DIR$/logfactory" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\src\github.com\jfeng45\glogger\logconfig" />
+      <recent name="D:\code\src\github.com\jfeng45\glogger\logfactory" />
+      <recent name="D:\code\src\github.com\jfeng45\glogger\zap" />
       <recent name="D:\code\src\github.com\jfeng45\glogger" />
+      <recent name="D:\code\src\github.com\jfeng45\glogger\logrus" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,14 +261,14 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="446" y="65" width="1306" height="910" extended-state="0" />
+    <frame x="76" y="11" width="1306" height="910" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27644232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2908654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.25717852" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.2559301" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36204743" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -254,26 +297,6 @@
     <entry file="file://$PROJECT_DIR$/go.sum">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/logrusFactory.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#23#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#167#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -281,57 +304,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zapFactory.go">
+    <entry file="file://$PROJECT_DIR$/zap/zapFactory.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="308">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
-            <element signature="e#23#143#0" expanded="true" />
+            <element signature="e#17#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zap.go">
+    <entry file="file://$PROJECT_DIR$/zap/zap.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="363">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="25" selection-end-line="111" selection-end-column="25" />
           <folding>
-            <element signature="e#56#201#0" expanded="true" />
+            <element signature="e#60#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logrus.go">
+    <entry file="file://$PROJECT_DIR$/logfactory/logFactory.go.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <element signature="e#65#204#0" expanded="true" />
+            <element signature="e#20#85#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logrus/logrus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#66#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logrus/logrusFactory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#17#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logconfig/logConfig.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logfactory/logFactory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#83#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logFactory.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logConfig.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="110">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>

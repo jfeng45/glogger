@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/jfeng45/glogger"
+	"github.com/jfeng45/glogger/logconfig"
+	"github.com/jfeng45/glogger/logfactory"
 )
 
 func main() {
-	lc := glogger.LogConfig{glogger.ZAP, "debug", true}
+	lc := logconfig.LogConfig{logfactory.ZAP, "debug", true}
 	//lc := config.LogConfig{config.LOGRUS, "debug", true}
-	logger, err := glogger.InitLogger(lc)
+	logger, err := logfactory.InitLogger(lc)
 	if err != nil {
 		fmt.Errorf("Init log failed")
 	}

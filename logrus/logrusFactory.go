@@ -1,6 +1,8 @@
-package glogger
+package logrus
 
 import (
+	"github.com/jfeng45/glogger"
+	"github.com/jfeng45/glogger/logconfig"
 	"github.com/pkg/errors"
 )
 
@@ -8,7 +10,7 @@ import (
 type LogrusFactory struct{}
 
 // build logrus logger
-func (mf *LogrusFactory) Build(lc *LogConfig) (Logger, error) {
+func (mf *LogrusFactory) Build(lc *logconfig.LogConfig) (glogger.Logger, error) {
 	l, err := RegisterLogrusLog(*lc)
 	if err != nil {
 		return nil, errors.Wrap(err, "")

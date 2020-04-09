@@ -1,10 +1,5 @@
-package glogger
+package logconfig
 
-// constant for logger code, it needs to match log code (logConfig)in configuration
-const (
-	LOGRUS string = "logrus"
-	ZAP    string = "zap"
-)
 // LogConfig represents logger handler
 // Logger has many parameters can be set or changed. Currently, only three are listed here. Can add more into it to
 // fits your needs.
