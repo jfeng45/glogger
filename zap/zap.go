@@ -39,7 +39,7 @@ import (
 //	logger.lw.Info(args, "\n")
 //}
 
-func RegisterLog(lc logconfig.LogConfig) (glogger.Logger, error) {
+func RegisterLog(lc *logconfig.LogConfig) (glogger.Logger, error) {
 	zLogger, err := initLog(lc)
 	if err != nil {
 		return nil, errors.Wrap(err, "RegisterLogrusLog")
@@ -56,7 +56,7 @@ func RegisterLog(lc logconfig.LogConfig) (glogger.Logger, error) {
 }
 
 // initLog create logger
-func initLog(lc logconfig.LogConfig) (zap.Logger, error) {
+func initLog(lc *logconfig.LogConfig) (*zap.Logger, error) {
 	rawJSON := []byte(`{
 	 "level": "info",
      "Development": true,
@@ -83,24 +83,24 @@ func initLog(lc logconfig.LogConfig) (zap.Logger, error) {
 	var zLogger *zap.Logger
 	//standard configuration
 	if err := json.Unmarshal(rawJSON, &cfg); err != nil {
-		return *zLogger, errors.Wrap(err, "Unmarshal")
+		return zLogger, errors.Wrap(err, "Unmarshal")
 	}
 	//customize it from configuration file
 	err := customizeLogFromConfig(&cfg, lc)
 	if err != nil {
-		return *zLogger, errors.Wrap(err, "cfg.Build()")
+		return zLogger, errors.Wrap(err, "cfg.Build()")
 	}
 	zLogger, err = cfg.Build()
 	if err != nil {
-		return *zLogger, errors.Wrap(err, "cfg.Build()")
+		return zLogger, errors.Wrap(err, "cfg.Build()")
 	}
 
 	zLogger.Debug("logger construction succeeded")
-	return *zLogger, nil
+	return zLogger, nil
 }
 
 // customizeLogrusLogFromConfig customize log based on parameters from configuration file
-func customizeLogFromConfig(cfg *zap.Config, lc logconfig.LogConfig) error {
+func customizeLogFromConfig(cfg *zap.Config, lc *logconfig.LogConfig) error {
 	cfg.DisableCaller = !lc.EnableCaller
 
 	// set log level

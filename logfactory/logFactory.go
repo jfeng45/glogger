@@ -1,4 +1,4 @@
-// package loggerfactory handles creating concrete logger with factory method pattern
+// package logfactory handles creating concrete logger with factory method pattern
 package logfactory
 
 import (
@@ -30,9 +30,9 @@ func GetLogFactoryBuilder(key string) logFbInterface {
 	return logfactoryBuilderMap[key]
 }
 
-func InitLogger(lc logconfig.LogConfig) (glogger.Logger, error) {
+func InitLogger(lc *logconfig.LogConfig) (glogger.Logger, error) {
 	loggerType := lc.Code
-	l, err := GetLogFactoryBuilder(loggerType).Build(&lc)
+	l, err := GetLogFactoryBuilder(loggerType).Build(lc)
 	if err != nil {
 		return l, errors.Wrap(err, "")
 	}

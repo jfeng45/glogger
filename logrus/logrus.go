@@ -39,7 +39,7 @@ import (
 //	logger.lw.Println(args)
 //}
 
-func RegisterLogrusLog(lc logconfig.LogConfig) (glogger.Logger, error) {
+func RegisterLogrusLog(lc *logconfig.LogConfig) (glogger.Logger, error) {
 	//standard configuration
 	log := logrus.New()
 	log.SetFormatter(&logrus.TextFormatter{})
@@ -58,7 +58,7 @@ func RegisterLogrusLog(lc logconfig.LogConfig) (glogger.Logger, error) {
 }
 
 // customizeLogrusLogFromConfig customize log based on parameters from configuration file
-func customizeLogrusLogFromConfig(log *logrus.Logger, lc logconfig.LogConfig) error {
+func customizeLogrusLogFromConfig(log *logrus.Logger, lc *logconfig.LogConfig) error {
 	log.SetReportCaller(lc.EnableCaller)
 	//log.SetOutput(os.Stdout)
 	l := &log.Level
