@@ -1,28 +1,23 @@
-// package logfactory handles creating concrete logger with factory method pattern
-package logfactory
+// package factory handles creating concrete logger with factory method pattern
+package factory
 
 import (
 	"github.com/jfeng45/glogger"
-	"github.com/jfeng45/glogger/logconfig"
+	"github.com/jfeng45/glogger/config"
 	"github.com/jfeng45/glogger/logrus"
 	"github.com/jfeng45/glogger/zap"
 	"github.com/pkg/errors"
 )
-// constant for logger code, it needs to match log code (logConfig)in configuration
-const (
-	LOGRUS string = "logrus"
-	ZAP    string = "zap"
-)
 
 // logger mapp to map logger code to logger builder
 var logfactoryBuilderMap = map[string]logFbInterface{
-	ZAP:    &zap.ZapFactory{},
-	LOGRUS: &logrus.LogrusFactory{},
+	config.ZAP:    &zap.ZapFactory{},
+	config.LOGRUS: &logrus.LogrusFactory{},
 }
 
 // interface for logger factory
 type logFbInterface interface {
-	Build(*logconfig.LogConfig) (glogger.Logger, error)
+	Build(*config.Logging) (glogger.Logger, error)
 }
 
 // accessors for factoryBuilderMap
@@ -30,7 +25,7 @@ func GetLogFactoryBuilder(key string) logFbInterface {
 	return logfactoryBuilderMap[key]
 }
 
-func InitLogger(lc *logconfig.LogConfig) (glogger.Logger, error) {
+func Build(lc *config.Logging) (glogger.Logger, error) {
 	loggerType := lc.Code
 	l, err := GetLogFactoryBuilder(loggerType).Build(lc)
 	if err != nil {

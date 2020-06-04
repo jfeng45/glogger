@@ -1,9 +1,22 @@
-package logconfig
+package config
 
-// LogConfig represents logger handler
+// constant for logger code, it needs to match log code (logConfig)in configuration
+const (
+	LOGRUS string = "logrus"
+	ZAP    string = "zap"
+)
+
+const (
+	DEBUG    = "debug"
+	INFO    = "info"
+	WARN    = "warn"
+	ERROR   = "error"
+)
+
+// Logging represents logger handler
 // Logger has many parameters can be set or changed. Currently, only three are listed here. Can add more into it to
 // fits your needs.
-type LogConfig struct {
+type Logging struct {
 	// log library name
 	Code string `yaml:"code"`
 	// log level
@@ -12,7 +25,7 @@ type LogConfig struct {
 	EnableCaller bool `yaml:"enableCaller"`
 }
 
-//func validateLogger(logConfig LogConfig) error {
+//func validateLogger(logConfig Logging) error {
 //	key := logConfig.Code
 //	zcMsg := " in validateLogger doesn't match key = "
 //	if ZAP != key {

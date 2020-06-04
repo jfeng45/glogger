@@ -1,15 +1,17 @@
 package main
 
 import (
-	"github.com/jfeng45/glogger/logconfig"
-	"github.com/jfeng45/glogger/logfactory"
+	"github.com/jfeng45/glogger/config"
+	"github.com/jfeng45/glogger/factory"
 	"log"
 )
 
 func main() {
-	lc := logconfig.LogConfig{logfactory.ZAP, "debug", true}
-	//lc := config.LogConfig{config.LOGRUS, "debug", true}
-	logger, err := logfactory.InitLogger(&lc)
+	lc := config.Logging{config.ZAP, config.DEBUG, true}
+	//lc := config.Logging{config.ZAP, config.INFO, true}
+	//lc := config.Logging{config.ZAP, config.WARN, true}
+	//lc := config.Logging{config.ZAP, config.ERROR, true}
+	logger, err := factory.Build(&lc)
 	if err != nil {
 		log.Fatal("Init log failed")
 	}
